@@ -14,6 +14,7 @@ import Glacier from "../../public/glacier.webp";
 import Glacier2 from "../../public/glacier2.webp";
 import Phone from "../../public/phone.webp";
 import PingPong from "../../public/pingpong.webp";
+import Bears from "../../public/bears.webp";
 
 export default function Home() {
   //scroll tracker normal
@@ -335,6 +336,16 @@ export default function Home() {
                     saves about the size of a ping pong table.
                   </motion.p>
                 </div>
+              </div>
+              <div className="fifthSection">
+                <Image
+                  src={Bears}
+                  style={{
+                    transform: `scale(${0.5 + scrollY / 5000})`,
+                  }}
+                  alt="An aereal shot of arctic sea ice with ice bears on it"
+                  className="bears"
+                />
               </div>
             </div>
           </div>
