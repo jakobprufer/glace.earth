@@ -1,0 +1,68 @@
+.titleBarContainer
+    display: flex
+    justify-content: center
+
+.titleBarCollapseLayer
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    z-index: 9
+    // background: #ffffff1b
+    // backdrop-filter: blur(15px)
+
+.titleBar
+    width: 350px
+    background: $transparentButton
+    backdrop-filter: blur(15px)
+    // height: 48px
+    padding: 4px 16px
+    position: fixed
+    top: 32px
+    z-index: 10
+    color: $lighthigh
+
+.titleBarTop
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.titleBarLeft
+    display: flex
+    gap: 8px
+    align-items: center
+
+.barLogoContainer
+    background: $logoBackground
+    height: 24px
+    width: 24px
+    padding: 3px
+    border-radius: 8px
+
+.barLogo
+    width: 18px
+    height: 18px
+
+.barLogoText
+    font-size: 14pt
+
+.barAboutButton
+    margin-right: -10px
+    padding: 10px 16px
+    border-radius: 18px
+    transition: background .2s
+
+    &:hover
+        background: $transparentButtonHover
+
+.titleBarExp
+    margin: 16px 0 8px 0
+
+    a
+        text-decoration: underline
+
+.barImage
+    height: 150px
+    object-fit: cover
+    border-radius: 4px

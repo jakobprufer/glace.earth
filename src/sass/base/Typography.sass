@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap')
+
+// @font-face
+//     font-family: 'Circular'
+//     src: url('/circular.woff') format('woff')
+//     font-weight: normal
+//     font-style: normal
+
+.page
+    font-family: 'Manrope', sans-serif
+    font-size: 12pt
+    font-weight: 500
+    color: $dark
+
+    p
+        line-height: 140%
+
+    h3
+        font-weight: 700
+
+.largeText
+    font-size: 72pt
+    font-weight: 500
+    font-family: 'Circular Std Book', sans-serif
+
+    @media (max-width: $breakBig)
+        font-size: 48pt
+
+    @media (max-width: $breakMobile)
+        font-size: 32pt
+
+.medText
+    font-size: 20pt
+    font-weight: 600
+
+    @media (max-width: $breakMobile)
+        font-size: 16pt
