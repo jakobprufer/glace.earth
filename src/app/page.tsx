@@ -14,6 +14,8 @@ import {
 import { Link as LinkS, animateScroll as scroll } from "react-scroll";
 // import "../../public/fonts/style.css";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import SixthLighter from "./components/SixthLighter";
+import Seventh from "./components/Seventh";
 
 //images
 import Glacier from "../../public/glacier.webp";
@@ -22,14 +24,7 @@ import Phone from "../../public/phone.webp";
 import PingPong from "../../public/pingpong.webp";
 import Bears from "../../public/bearsexp.webp";
 import BearsMobile from "../../public/bearsexpmobile.webp";
-import FrameSmall from "../../public/framesmall.webp";
-import FrameMed from "../../public/framemed.webp";
-import FrameBig from "../../public/framebig.webp";
-import IntroLogo from "../../public/intrologo.webp";
-import Screen1 from "../../public/screen1.webp";
-import Screen2 from "../../public/screen2.webp";
-import Screen3 from "../../public/screen3.webp";
-import SixthLighter from "./components/SixthLighter";
+import Frames from "../../public/frames.webp";
 
 export default function Home() {
   //scroll tracker normal
@@ -398,65 +393,67 @@ export default function Home() {
                     from a satellite image - we can calculate this based on{" "}
                     <span className="lighthigh">mass of CO2 emissions</span>.
                   </motion.p>
-                  <motion.div
-                    className="expandingButton button"
-                    layout
-                    style={{ borderRadius: "16px" }}
-                  >
+                  <div className="expandingButtonOuter">
                     <motion.div
-                      layout="position"
-                      className="buttonLabel"
-                      onClick={() => setExpandSources(!expandSources)}
+                      className="expandingButton button"
+                      layout
+                      style={{ borderRadius: "16px" }}
                     >
-                      <RiArrowRightUpLine className="riIconInline" /> See our
-                      sources
-                    </motion.div>
-                    {expandSources ? (
                       <motion.div
-                        className="buttonExp"
                         layout="position"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.1 }}
+                        className="buttonLabel"
+                        onClick={() => setExpandSources(!expandSources)}
                       >
-                        <motion.h3>
-                          Translating CO2 emissions into area of ice melted
-                        </motion.h3>
-                        <motion.a href="https://www.science.org/doi/10.1126/science.aag2345">
-                          Notz, D. and Stroeve, J., 2016. Observed Arctic
-                          sea-ice loss directly follows anthropogenic CO2
-                          emission. Science, 354(6313), pp.747-750.
-                        </motion.a>
-                        <motion.h3>Financed emissions of funds</motion.h3>
-                        <motion.a href="https://fossilfreefunds.org/">
-                          https://fossilfreefunds.org/
-                        </motion.a>{" "}
-                        <motion.span>and</motion.span>{" "}
-                        <motion.a href="https://clarity.ai/claritycheck/">
-                          https://clarity.ai/claritycheck/
-                        </motion.a>
-                        <motion.h3>Emissions of lifestyle changes</motion.h3>
-                        <motion.a href="https://iopscience.iop.org/article/10.1088/1748-9326/aa7541?dom=translatable&src=syn">
-                          Wynes, S. and Nicholas, K.A., 2017. The climate
-                          mitigation gap: education and government
-                          recommendations miss the most effective individual
-                          actions. Environmental Research Letters, 12(7),
-                          p.074024.
-                        </motion.a>
+                        <RiArrowRightUpLine className="riIconInline" /> See our
+                        sources
                       </motion.div>
-                    ) : null}
-                  </motion.div>
+                      {expandSources ? (
+                        <motion.div
+                          className="buttonExp"
+                          layout="position"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ delay: 0.1 }}
+                        >
+                          <motion.h3>
+                            Translating CO2 emissions into area of ice melted
+                          </motion.h3>
+                          <motion.a href="https://www.science.org/doi/10.1126/science.aag2345">
+                            Notz, D. and Stroeve, J., 2016. Observed Arctic
+                            sea-ice loss directly follows anthropogenic CO2
+                            emission. Science, 354(6313), pp.747-750.
+                          </motion.a>
+                          <motion.h3>Financed emissions of funds</motion.h3>
+                          <motion.a href="https://fossilfreefunds.org/">
+                            https://fossilfreefunds.org/
+                          </motion.a>{" "}
+                          <motion.span>and</motion.span>{" "}
+                          <motion.a href="https://clarity.ai/claritycheck/">
+                            https://clarity.ai/claritycheck/
+                          </motion.a>
+                          <motion.h3>Emissions of lifestyle changes</motion.h3>
+                          <motion.a href="https://iopscience.iop.org/article/10.1088/1748-9326/aa7541?dom=translatable&src=syn">
+                            Wynes, S. and Nicholas, K.A., 2017. The climate
+                            mitigation gap: education and government
+                            recommendations miss the most effective individual
+                            actions. Environmental Research Letters, 12(7),
+                            p.074024.
+                          </motion.a>
+                        </motion.div>
+                      ) : null}
+                    </motion.div>
+                  </div>
                 </div>
                 <motion.div className="bearFrames">
                   <Image
-                    src={FrameSmall}
+                    src={Frames}
                     // style={{
                     //   transform: `scale(${1 + (scrollY - 2500) / 10000})`,
                     // }}
                     alt="Frame to show the area of ice melted for 100kg of Co2"
                     className="frame"
                   />
-                  <Image
+                  {/* <Image
                     src={FrameMed}
                     // style={{
                     //   transform: `scale(${1 + (scrollY - 2500) / 10000})`,
@@ -471,7 +468,7 @@ export default function Home() {
                     // }}
                     alt="Frame to show the area of ice melted for 100kg of Co2"
                     className="frame"
-                  />
+                  /> */}
                 </motion.div>
               </div>
               <div className="sixthSection medText">
@@ -496,52 +493,7 @@ export default function Home() {
               </div>
             </div>
             <SixthLighter />
-            <div className="seventhSection">
-              <div className="seventhLeft">
-                <div className="screens">
-                  <Image
-                    src={Screen1}
-                    alt="Screen showing the Glace App"
-                    className="screen1"
-                  />
-                  <Image
-                    src={Screen2}
-                    alt="Screen showing the Glace App"
-                    className="screen2"
-                  />
-                  <Image
-                    src={Screen3}
-                    alt="Screen showing the Glace App"
-                    className="screen3"
-                  />
-                </div>
-              </div>
-              <div className="seventhRight">
-                <div className="introducingCont">
-                  <div className="introducingGroup">
-                    <motion.div
-                      initial={{ opacity: 0, y: 0 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1, ease: easeInOut }}
-                      className="smallText introducingText"
-                    >
-                      Introducing:
-                    </motion.div>
-                    <motion.div
-                      initial={{ opacity: 0, y: 0 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1, ease: easeInOut }}
-                    >
-                      <Image
-                        src={IntroLogo}
-                        alt="Logo of the app Glace with it's slogan 'The sustainable vault'"
-                        className="introLogo"
-                      />
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Seventh />
           </div>
         ) : (
           <Loading />
