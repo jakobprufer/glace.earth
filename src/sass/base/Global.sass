@@ -11,16 +11,13 @@ body
     width: 100%
     // margin: auto
     // min-height: 200vh
-    overflow: hidden
+    // overflow: hidden
+
+.riIconInline
+    transform: translateY(15%) translateX(-15%)
 
 .main
     width: 100%
-
-.darkhigh
-    color: $darkhigh
-
-.lighthigh
-    color: $lighthigh
 
 .loading
     background: $light
@@ -48,12 +45,16 @@ body
     padding: 8px 16px
     border-radius: 16px
 
+.hideOverflow
+    width: 100vw
+    overflow: hidden
+
 .firstSection
     background: $light
     height: 50vh
     position: relative
     padding: 1px
-    // overflow: hidden
+    overflow: hidden
     top: 0
     z-index: 3
 
@@ -186,6 +187,7 @@ body
     position: absolute
     left: 0
     z-index: 1
+    transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
 
     @media (max-width: $breakMobile)
         width: auto
@@ -208,13 +210,6 @@ body
     p
         max-width: 550px
 
-.movingSection1
-    top: -50vh
-    position: relative
-
-    @media (max-width: $breakMobile)
-        top: -20vh
-
 .thirdSection
     height: 100vh
     background: $darkhigh
@@ -223,12 +218,13 @@ body
     flex-wrap: nowrap
     flex-direction: row
     align-items: center
-    overflow: hidden
+    margin-top: -50vh
 
     gap: 64px
 
     @media (max-width: $breakMobile)
         flex-direction: column
+        margin-top: -20vh
 
 .thirdSectionText
     display: flex
@@ -252,6 +248,7 @@ body
     z-index: 2
     position: relative
     top: 15vh
+    transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
 
     @media (max-width: $breakMobile)
         top: 5vh
@@ -266,7 +263,6 @@ body
     justify-content: flex-end
     flex-direction: row
     align-items: flex-start
-    overflow: hidden
 
     @media (max-width: $breakBig)
         align-items: flex-end
@@ -282,6 +278,8 @@ body
     position: absolute
     left: -20vh
     top: -5vw
+    z-index: 3
+    transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
 
     @media (max-width: $breakMobile)
         max-width: 100vw
@@ -297,7 +295,7 @@ body
     padding-right: 10vw
     padding-top: 8vw
     color: $light
-    z-index: 2
+    z-index: 4
 
     @media (max-width: $breakBig)
         padding-bottom: 10vw
@@ -318,29 +316,45 @@ body
     flex-wrap: nowrap
     flex-direction: row
     align-items: center
-    overflow: hidden
     justify-content: space-between
     gap: 32px
+    z-index: 5
 
-    @media (max-width: $breakMobile)
+    @media (max-width: 1000px)
+        gap: 16px
+
+    @media (max-width: $breakBig)
         flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        gap: 128px
 
-// .bearsShadowBox
-//     box-shadow: inset 0px -89px 44px -59px #000
-//     z-index: 2
-//     height: 100%
-//     width: 100%
+    @media (max-height: 800px)
+        gap: 64px
+
+.bearsShadowBox
+    box-shadow: inset 0px -300px 400px -59px #000
+    z-index: 2
+    height: 100%
+    width: 100%
+    position: absolute
 
 .bears
     width: 100vw
     height: 100%
     object-fit: cover
+    object-position: center
     display: block
     position: absolute
     left: 0
     z-index: 1
+    transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
 
-    @media (max-width: $breakMobile)
+    @media (max-height: 800px)
+        left: -200px
+        top: -50px
+
+    @media (max-width: $breakBig)
         width: auto
         height: 100%
 
@@ -348,19 +362,58 @@ body
     padding-left: 10vw
     color: $light
     z-index: 2
+    display: flex
+    flex-direction: column
+    gap: 16px
 
-    @media (max-width: $breakMobile)
+    @media (max-width: 1000px)
+        padding-left: 5vw
+
+    @media (max-width: $breakBig)
         padding-right: 8vw
         padding-left: 8vw
 
     p
         max-width: 450px
 
+.expandingButton
+    background: $transparentButton
+    backdrop-filter: blur(15px)
+    font-size: 12pt
+    color: $lighthigh
+    width: fit-content
+
+.buttonLabel
+    padding: 8px 16px
+
+.buttonExp
+    margin-top: 16px
+    margin-bottom: 8px
+    font-size: 10pt
+    margin: 0px 16px 16px 16px
+    position: relative
+
+    h3
+        margin-bottom: 4px
+        margin-top: 16px
+
+    a
+        // font-size: 10pt
+        text-decoration: underline
+
 .bearFrames
     position: relative
-    width: 750px
-    height: 720px
+    width: 700px
+    height: 680px
     flex-shrink: 0
+    z-index: 2
+
+    @media (max-width: $breakBig)
+        transform: translate(-20vw)
+        align-self: center
+
+    @media (max-width: $breakMobile)
+        transform: translate(-50vw)
 
 .frame
     position: absolute
@@ -368,3 +421,108 @@ body
     height: 100%
     z-index: 3
     padding-right: 5vw
+
+    @media (max-width: 1000px)
+        padding-right: 0
+
+.sixthSection
+    height: 200vh
+    padding-bottom: 100vh
+    width: 100%
+    background: $darkhigh
+    color: $light
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 32px
+
+    p
+        max-width: 500px
+
+    @media (max-width: $breakMobile)
+        padding-right: 8vw
+        padding-left: 8vw
+
+.sixthSectionLighter
+    height: 200vh
+    margin-top: -200vh
+    background: $background
+    position: relative
+
+.seventhSection
+    height: 300vh
+    margin-top: -200vh
+    padding-top: 100vh
+    color: $dark
+    display: flex
+    gap: 5vw
+    // background: $background
+    position: relative
+
+.seventhLeft
+    width: 50%
+    display: flex
+    justify-content: right
+    align-items: center
+    height: 100vh
+    // overflow: hidden
+    position: -webkit-sticky
+    position: -moz-sticky
+    position: -o-sticky
+    position: -ms-sticky
+    position: sticky
+    top: 0
+    align-self: flex-start
+
+.screens
+    // margin-right: 16px
+    z-index: 2
+
+.screen1
+    width: 10vw
+    height: auto
+    transform: translateX(3vw)
+
+.screen2
+    width: 11vw
+    height: auto
+    z-index: 3
+    position: relative
+
+.screen3
+    width: 10vw
+    height: auto
+    transform: translateX(-3vw)
+
+.seventhRight
+    width: 50%
+    // padding-left: 16px
+    z-index: 2
+
+.introducingCont
+    height: 100vh
+    display: flex
+    justify-content: left
+    align-items: center
+
+.introducingGroup
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+.introducingText
+    margin-left: 8vw
+    // background: $dark
+    // padding-bottom: 16px
+    // border-bottom: 2px solid $darkhigh
+
+.introLogo
+    width: 25vw
+    height: auto
+    // background: $logoBackground
+    // padding: 16px 32px
+    // border-radius: 16px
+
+.seventhSectionContent
+    z-index: 2
