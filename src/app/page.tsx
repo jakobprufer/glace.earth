@@ -14,7 +14,10 @@ import Glacier from "../../public/glacier.webp";
 import Glacier2 from "../../public/glacier2.webp";
 import Phone from "../../public/phone.webp";
 import PingPong from "../../public/pingpong.webp";
-import Bears from "../../public/bears.webp";
+import Bears from "../../public/bearsexp.webp";
+import FrameSmall from "../../public/framesmall.webp";
+import FrameMed from "../../public/framemed.webp";
+import FrameBig from "../../public/framebig.webp";
 
 export default function Home() {
   //scroll tracker normal
@@ -31,6 +34,8 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  console.log(1 + (scrollY - 2500) / 5000);
 
   //framer staggered text animations
   const wordVariants: Variants = {
@@ -254,7 +259,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <div className="shadowBox"></div>
+              <div className="glacierShadowBox"></div>
               <Image
                 src={Glacier}
                 style={{ transform: `translateX(${-scrollY / 200}%)` }}
@@ -338,14 +343,53 @@ export default function Home() {
                 </div>
               </div>
               <div className="fifthSection">
+                {/* <div className="bearsShadowBox"></div> */}
                 <Image
                   src={Bears}
                   style={{
-                    transform: `scale(${0.5 + scrollY / 5000})`,
+                    transform: `scale(${1 + (scrollY - 2500) / 5000})`,
                   }}
                   alt="An aereal shot of arctic sea ice with ice bears on it"
                   className="bears"
                 />
+                <div className="fifthSectionText medText">
+                  <motion.p
+                    initial={{ opacity: 0, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: easeInOut }}
+                  >
+                    By this we mean the{" "}
+                    <span className="lighthigh">surface of ice</span> as seen
+                    from a satellite image - we can calculate this based on{" "}
+                    <span className="lighthigh">mass of CO2 emissions</span>.
+                  </motion.p>
+                </div>
+                <motion.div className="bearFrames">
+                  <Image
+                    src={FrameSmall}
+                    // style={{
+                    //   transform: `scale(${1 + (scrollY - 2500) / 10000})`,
+                    // }}
+                    alt="Frame to show the area of ice melted for 100kg of Co2"
+                    className="frame"
+                  />
+                  <Image
+                    src={FrameMed}
+                    // style={{
+                    //   transform: `scale(${1 + (scrollY - 2500) / 10000})`,
+                    // }}
+                    alt="Frame to show the area of ice melted for 100kg of Co2"
+                    className="frame"
+                  />
+                  <Image
+                    src={FrameBig}
+                    // style={{
+                    //   transform: `scale(${1 + (scrollY - 2500) / 10000})`,
+                    // }}
+                    alt="Frame to show the area of ice melted for 100kg of Co2"
+                    className="frame"
+                  />
+                </motion.div>
               </div>
             </div>
           </div>
