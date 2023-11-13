@@ -15,7 +15,7 @@ echo ""
 echo "==> building container"
 echo ""
 docker build --platform linux/amd64 -t glace .
-IMAGE="${DOCKER_CR}/prufer/${DOCKER_IMAGE}"
+IMAGE="${DOCKER_CR}/glace/${DOCKER_IMAGE}"
 docker tag glace:latest ${IMAGE}:latest
 
 echo ""
