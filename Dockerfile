@@ -42,8 +42,8 @@ COPY --from=build --chown=nextjs:nodejs /web/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 80
-ENV PORT 80
+EXPOSE 3000
+ENV PORT 3000
 ENV HOSTNAME "0.0.0.0"
 
 CMD ["node", "server.js"]
