@@ -7,7 +7,7 @@ export default function SixthLighter() {
   const seventh = useRef(null);
   const { scrollYProgress } = useScroll({
     target: seventh,
-    offset: ["0 0", "0.8 1"],
+    offset: ["0.1 0", "0.8 1"],
   });
 
   return (

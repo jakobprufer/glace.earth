@@ -67,7 +67,7 @@ export default function Seventh() {
       <div className="seventhLeft">
         <div className="screens">
           <AnimatePresence>
-            {distanceToTop + 1.4 * viewportHeight >= scrollY ? (
+            {distanceToTop + 1.3 * viewportHeight >= scrollY ? (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -87,10 +87,10 @@ export default function Seventh() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className={`screen2 ${
-                distanceToTop + 1.4 * viewportHeight <= scrollY &&
-                distanceToTop + 2.2 * viewportHeight >= scrollY
+                distanceToTop + 1.3 * viewportHeight <= scrollY &&
+                distanceToTop + 2.1 * viewportHeight >= scrollY
                   ? "exp"
-                  : distanceToTop + 2.2 * viewportHeight <= scrollY
+                  : distanceToTop + 2.1 * viewportHeight <= scrollY
                   ? "exp2"
                   : null
               }`}
@@ -98,7 +98,7 @@ export default function Seventh() {
             >
               <Image
                 src={
-                  distanceToTop + 1.4 * viewportHeight >= scrollY
+                  distanceToTop + 1.3 * viewportHeight >= scrollY
                     ? Screen2
                     : Screen1
                 }
@@ -106,7 +106,7 @@ export default function Seventh() {
                 className="screen"
               />
             </motion.div>
-            {distanceToTop + 1.4 * viewportHeight >= scrollY ? (
+            {distanceToTop + 1.3 * viewportHeight >= scrollY ? (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
