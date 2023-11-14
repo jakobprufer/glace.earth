@@ -7,6 +7,7 @@ import IntroLogo from "../../../public/intrologo.webp";
 import Screen1 from "../../../public/screen1.webp";
 import Screen2 from "../../../public/screen2.webp";
 import Screen3 from "../../../public/screen3.webp";
+import Screen4 from "../../../public/screen4.webp";
 
 export default function Seventh() {
   //seventh distance from top
@@ -100,7 +101,7 @@ export default function Seventh() {
                 src={
                   distanceToTop + 1.3 * viewportHeight >= scrollY
                     ? Screen2
-                    : Screen1
+                    : Screen4
                 }
                 alt="Screen showing the Glace App"
                 className="screen"

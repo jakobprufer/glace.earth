@@ -5,7 +5,6 @@ ARG version=0.0.1
 WORKDIR /web
 COPY ./src /web/src
 COPY ./public /web/public
-COPY ./yarn.lock /web/
 COPY ./package.json /web/
 COPY ./package-lock.json /web/
 COPY ./nginx.conf /web/
@@ -14,8 +13,8 @@ COPY ./next.config.js /web/
 COPY ./next-env.d.ts /web/
 
 RUN npm version --no-git-tag-version ${version} \
-  && yarn install \
-  && yarn run build
+  && npm install \
+  && npm run build
 
 # FROM nginx:alpine
 # EXPOSE 80
