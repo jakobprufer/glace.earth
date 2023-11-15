@@ -65,7 +65,11 @@ export default function Seventh() {
 
   return (
     <div className="seventhSection" ref={divRef}>
-      <div className="seventhLeft">
+      <div
+        className={`seventhLeft ${
+          distanceToTop + 1 * viewportHeight >= scrollY ? null : "withBg"
+        }`}
+      >
         <div className="screens">
           <AnimatePresence>
             {distanceToTop + 1.3 * viewportHeight >= scrollY ? (

@@ -126,14 +126,17 @@ export default function Home() {
   //expand sources
   const [expandSources, setExpandSources] = useState(false);
 
-  //bigBreakpoint
+  //Breakpoints
   const [smallScreen, setSmallScreen] = useState(false);
+  const [mobileScreen, setMobileScreen] = useState(false);
 
   useEffect(() => {
     // Function to update the state based on window width
     const updateWindowDimensions = () => {
       const isSmallerThan800px = window.innerWidth < 800;
       setSmallScreen(isSmallerThan800px);
+      const isSmallerThan600px = window.innerWidth < 600;
+      setMobileScreen(isSmallerThan600px);
     };
 
     // Add event listener to update state when window is resized
