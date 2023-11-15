@@ -2,8 +2,8 @@
 import { AnimatePresence, motion, useAnimate } from "framer-motion";
 import { useState, useEffect, Fragment } from "react";
 import Link from "next/link";
-import Manfredi from "../../../public/manfredi.jpg";
-import Jakob from "../../../public/jakob.jpg";
+import Manfredi from "../../../public/manfredi1.jpg";
+import Jakob from "../../../public/jakob1.jpg";
 import Image from "next/image";
 
 export default function TitleBar({ scrollY }: { scrollY: number }) {
@@ -114,47 +114,55 @@ export default function TitleBar({ scrollY }: { scrollY: number }) {
                     test@getglace.com */}
                   </motion.p>
                   <motion.h3 className="mts">Who we are</motion.h3>
-                  {/* <Image
-                    alt="Manfredi smiling, sitting at a table"
-                    src={Manfredi}
-                    width={318}
-                    className="barImage mts"
-                  /> */}
-                  <motion.p className="titleBarP mtxs light">
-                    Manfredi studied product design at Politecnico di Milano
-                    before focussing in on human-centred, tangible UX design in
-                    Barcelona. He worked on the fund management platform Fundvis
-                    and is a co-founder of Weply, a sports marketplace.
-                  </motion.p>
-                  <motion.div className="mtxs">
-                    <a href="https://manfredimaux.com/" target="_blank">
-                      Portfolio
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/manfredimontarettomarullo/"
-                      target="_blank"
-                      className="mls"
-                    >
-                      LinkedIn
-                    </a>
-                  </motion.div>
+                  <div className="barImages">
+                    <Image
+                      alt="Jakob smiling, sitting at a table"
+                      src={Jakob}
+                      width={154}
+                      className="mts barImage"
+                    />
+                    <Image
+                      alt="Manfredi smiling, sitting at a table"
+                      src={Manfredi}
+                      width={154}
+                      className="mts barImage"
+                    />
+                  </div>
                   {/* <Image
                     alt="Jakob smiling, sitting at a table"
                     src={Jakob}
                     width={318}
                     className="barImage mts"
                   /> */}
-                  <motion.p className="titleBarP mts">
-                    Jakob studied psychology at the London School of Economics
-                    before coming to UAL. His interest is on design and its
-                    intersection with psychology.
+                  <motion.p className="titleBarP mtxs">
+                    Jakob studied Psychology and Behavioural Science at the
+                    London School of Economics before coming to UAL. His
+                    interest is on design and its intersection with psychology.
                   </motion.p>
-                  <motion.div className="mtxs mbs">
+                  <motion.div className="mtxs">
                     <a href="https://prufer.co" target="_blank">
                       Portfolio
                     </a>
                     <a
                       href="https://www.linkedin.com/in/jakobprufer/"
+                      target="_blank"
+                      className="mls"
+                    >
+                      LinkedIn
+                    </a>
+                  </motion.div>
+                  <motion.p className="titleBarP mts light">
+                    Manfredi studied product design at Politecnico di Milano
+                    before focussing in on human-centred, tangible UX design in
+                    Barcelona. He worked on the fund management platform Fundvis
+                    and is a co-founder of Weply, a sports marketplace.
+                  </motion.p>
+                  <motion.div className="mtxs mbs">
+                    <a href="https://manfredimaux.com/" target="_blank">
+                      Portfolio
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/manfredimontarettomarullo/"
                       target="_blank"
                       className="mls"
                     >
