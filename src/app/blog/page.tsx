@@ -5,6 +5,15 @@ export default function page() {
   return (
     <div className="blog">
       <h1>Glace - Jakob's Blog</h1>
+      <h2>
+        Blog is currently updated. The final version is available here:{" "}
+        <a
+          href="https://docs.google.com/document/d/1Hf7mGln3GTToLxiT6SjD6fAKnVSMPhkk7qxL5Iss738/edit?usp=sharing"
+          target="_blank"
+        >
+          https://docs.google.com/document/d/1Hf7mGln3GTToLxiT6SjD6fAKnVSMPhkk7qxL5Iss738/edit?usp=sharing
+        </a>
+      </h2>
       <p className="intro">
         This blog documents Final Major Project process of my course mate
         Manfredi and me, as we worked together to design a sustainable
@@ -323,6 +332,32 @@ export default function page() {
           generation was generally more active in sustainable behaviours and
           willing to pay more for eco-friendly products.
         </p>
+        <p>
+          As for Gen Z’s relationship to spending, we found four important
+          factors likely to play a role in their consumption behaviours.{" "}
+        </p>
+        <ul>
+          <li>
+            <b>Focus on innovation:</b> a strong inclination towards spending on
+            technological and design-based innovations in the marketplace
+          </li>
+          <li>
+            <b>Insistence on convenience:</b> reliance on convenience, seen in
+            preferences for time-saving devices, easy-to-acquire retail
+            channels, and products with simplified experiences
+          </li>
+          <li>
+            <b>Desire for security:</b> Economic challenges shape Generation Z's
+            focus on security, leading to an interest in saving and conservative
+            spending
+          </li>
+          <li>
+            <b>Tendency toward escapism: </b>prone to escapist consumption
+            pursuits including entertainment (e.g., movies, music, video-games)
+            and fostering social “tribes”, partyl as a response to economic
+            challenges
+          </li>
+        </ul>
       </section>
     </div>
   );
