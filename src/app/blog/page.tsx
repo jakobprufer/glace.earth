@@ -3,7 +3,14 @@ import "../../sass/main.sass";
 import TitleBar from "../components/TitleBar";
 import Image from "next/image";
 
+import { RiNotionFill } from "react-icons/ri";
+
 import Cube from "../../../public/blog/cube.webp";
+import Protest from "../../../public/blog/protest.webp";
+import Competitor from "../../../public/blog/competitor.webp";
+import Interviews from "../../../public/blog/interviews2.webp";
+import Data from "../../../public/blog/data.webp";
+import Icon from "../../../public/blog/icon.webp";
 
 export default function page() {
   return (
@@ -23,15 +30,21 @@ export default function page() {
             href="https://www.notion.so/manfredidesign/Glace-7280a178c3a645749f3985dd9541c17a?pvs=4"
             target="_blank"
           >
+            <RiNotionFill className="riIcon" />
             Notion
           </a>
         </p>
-        <p className="intro">
+        <p className="intro mbm">
           For the pitch website see{" "}
-          <a
-            href="For the pitch website see https://glace.earth"
-            target="_blank"
-          >
+          <a href="https://glace.earth">
+            <Image
+              src={Icon}
+              //   style={{
+              //     transform: `scale(${70 + scrollY / 30}%) rotate(${0}deg)`,
+              //   }}
+              alt="Glace icon"
+              className="glaceIcon"
+            />
             https://glace.earth
           </a>
         </p>
@@ -132,7 +145,14 @@ export default function page() {
         </section>
         <section className="section2">
           <h2>Section 2 – Background Research & Literature Review</h2>
-
+          <Image
+            src={Competitor}
+            //   style={{
+            //     transform: `scale(${70 + scrollY / 30}%) rotate(${0}deg)`,
+            //   }}
+            alt="A young woman with a serious face in a environmental protest"
+            className="blogImg"
+          />
           <p>So we arrived at our research question:</p>
 
           <p>
@@ -453,7 +473,14 @@ export default function page() {
               here
             </a>
           </h3>
-
+          <Image
+            src={Interviews}
+            //   style={{
+            //     transform: `scale(${70 + scrollY / 30}%) rotate(${0}deg)`,
+            //   }}
+            alt="6 images of different people smiling while being interviewed"
+            className="blogImg"
+          />
           <p>
             We then conducted the interviews in person and on video call with 8
             participants, of equal parts male and female and of five different
@@ -754,7 +781,14 @@ export default function page() {
         </section>
         <section className="section5">
           <h2>Section 5 – Ideation 2</h2>
-
+          <Image
+            src={Data}
+            //   style={{
+            //     transform: `scale(${70 + scrollY / 30}%) rotate(${0}deg)`,
+            //   }}
+            alt="A research paper and the interface of the Carity AI platform"
+            className="blogImg"
+          />
           <p>
             The uncertainties about the impact visualization we managed to
             overcome with two important steps.
