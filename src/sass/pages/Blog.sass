@@ -1,14 +1,32 @@
+
 .blog
+    //STANDARD TEXT TRANSFORMER
     max-width: 800px
     margin: 32px auto
-    line-height: 150%
     font-size: 14pt
+    line-height: 160%
+    font-weight: 400
+
+    //to break long links
+    white-space: pre-wrap
+    white-space: -moz-pre-wrap
+    white-space: -pre-wrap
+    white-space: -o-pre-wrap
+    overflow-wrap: break-word
+    word-wrap: break-word
+    word-break: break-word
+    hyphens: auto
+
+    @media (max-width: 800px)
+        padding: 5vw
 
     p
-        padding-bottom: 16px
+        padding-bottom: 48px
+        line-height: 160%
 
     ul
-        padding-bottom: 16px
+        padding-bottom: 48px
+        margin-top: -32px
         list-style-type: none
         margin-left: 24px
 
@@ -22,20 +40,41 @@
                 text-indent: -0.83em
 
     h1
-        padding-bottom: 16px
+        padding-bottom: 32px
         padding-top: 8px
         font-weight: 800
         font-size: 28pt
 
     h2
-        padding-bottom: 16px
-        padding-top: 8px
+        padding-bottom: 32px
+        padding-top: 32px
         font-size: 16pt
+        font-size: 20pt
+        font-weight: 700
 
     h3
-        padding-bottom: 16px
+        padding-bottom: 32px
         padding-top: 8px
+        font-weight: 400
+        font-size: 20pt
 
     a
         text-decoration: underline
         cursor: pointer
+
+    //BLOG SPECIFIC
+    // section
+    //     background: #e9e9e9af
+    //     padding: 32px
+    //     border-radius: 16px
+    //     margin-bottom: 23px
+    //     transition: box-shadow .3s ease-in-out
+
+    //     &:hover
+    //         box-shadow: 0 0 20px #0000001e
+
+    .blogImg
+        width: 100%
+        height: auto
+        margin: 0 0 32px 0
+        border-radius: 16px

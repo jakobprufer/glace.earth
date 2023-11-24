@@ -1,6 +1,9 @@
 import React from "react";
 import "../../sass/main.sass";
 import TitleBar from "../components/TitleBar";
+import Image from "next/image";
+
+import Cube from "../../../public/blog/cube.webp";
 
 export default function page() {
   return (
@@ -8,15 +11,6 @@ export default function page() {
       {/* <TitleBar scrollY={scrollY} /> */}
       <div className="blog">
         <h1>Glace - Jakob's Blog</h1>
-        <h2>
-          Blog is currently being updated. The final version is available here:{" "}
-          <a
-            href="https://docs.google.com/document/d/1Hf7mGln3GTToLxiT6SjD6fAKnVSMPhkk7qxL5Iss738/edit?usp=sharing"
-            target="_blank"
-          >
-            https://docs.google.com/document/d/1Hf7mGln3GTToLxiT6SjD6fAKnVSMPhkk7qxL5Iss738/edit?usp=sharing
-          </a>
-        </h2>
         <p className="intro">
           This blog documents Final Major Project process of my course mate
           Manfredi and me, as we worked together to design a sustainable
@@ -43,6 +37,14 @@ export default function page() {
         </p>
         <section className="section1">
           <h2>Section 1 – Topic Finding</h2>
+          <Image
+            src={Cube}
+            //   style={{
+            //     transform: `scale(${70 + scrollY / 30}%) rotate(${0}deg)`,
+            //   }}
+            alt="A phone made out of ice"
+            className="blogImg"
+          />
           <h3>Team Selection</h3>
           <p>
             Manfredi and I decided early on that we would work together because
