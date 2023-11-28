@@ -67,7 +67,7 @@ export default function page() {
       <div className="blog">
         <h1>Glace - Jakob's Blog</h1>
         <p className="intro">
-          This blog documents Final Major Project process of my course mate
+          This blog documents the Final Major Project process of my course mate
           Manfredi and me, as we worked together to design a sustainable
           investment app of a new generation that visualises impact in the area
           of arctic ice saved.
@@ -323,7 +323,7 @@ export default function page() {
                 during early project identity development
               </div>
               <h3>
-                Financial research – For full research see{" "}
+                Financial research – For full research and sources see{" "}
                 <a
                   href="https://www.notion.so/manfredidesign/Financial-Background-Research-4d23258714a34077956e9084e3fa9677?pvs=4"
                   target="_blank"
@@ -373,6 +373,7 @@ export default function page() {
                 <a href="http://truvaluelabs.com/" target="_blank">
                   <b>Truevalue Labs</b>
                 </a>{" "}
+                and{" "}
                 <a href="https://www.esgbook.com/" target="_blank">
                   <b>esg book</b>
                 </a>
@@ -399,13 +400,31 @@ export default function page() {
                 </a>
               </h3>
               <p>
-                To understand the existing sustainability finance landscape, we
-                looked at existing solutions. Those were investment platforms of
-                different types: direct crowdfunding for sustainable energy
-                projects, traditional brokers with sustainability features,
-                platforms targeted to specific user groups (e.g. female-focussed
-                investment) up to fully automated robo-advisors. We evaluated
-                both their financial blueprint and their front end design.
+                To understand the current landscape of sustainability finance,
+                our research examined existing investment platforms across the
+                spectrum. These included:
+              </p>
+              <ul>
+                <li>
+                  Direct crowdfunding platforms for sustainable energy projects,
+                  enabling individual investments into green initiatives.
+                </li>
+                <li>
+                  Traditional brokerages offering sustainability-focused
+                  investment funds and portfolios.
+                </li>
+                <li>
+                  Platforms tailored to specific demographic groups, such as
+                  those focused on female investors.
+                </li>
+                <li>
+                  Fully automated robo-advisors optimized for sustainable
+                  investing goals.
+                </li>
+              </ul>
+              <p>
+                We evaluated both their financial blueprint and their front end
+                design.
               </p>
               <p>All firms we looked at:</p>
               <ul>
@@ -497,7 +516,7 @@ export default function page() {
                 className="blogImg"
               />
               <h3>
-                Research on Target audience – Research and sources{" "}
+                Research on Target audience – see the full research and sources{" "}
                 <a
                   href="https://www.notion.so/manfredidesign/Gen-Z-and-Relation-to-Climate-Change-9b6cccd5b8a6470d9502c3505691844d?pvs=4"
                   target="_blank"
@@ -549,9 +568,9 @@ export default function page() {
                 </li>
               </ul>
               <p>
-                For our project, mostly the first three aspects seemed relevant
-                – we offered investing through on a mobile application, and
-                innovative and highly convenient channel. We would also focus on
+                For our project the first three aspects seemed relevant – we
+                sought to offer investments through on a mobile application, an
+                innovative and highly convenient channel. We would focus on
                 creating the trust both in the financial security as well as
                 ecological integrity of the mission.
               </p>
@@ -628,14 +647,14 @@ export default function page() {
               </p>
 
               <p>
-                As methodology, we chose in-depth interviews with subsequent
-                affinity mapping and thematic analysis. These were chosen for
-                their facilitation of open-ended discussions, providing rich
-                qualitative data on the interviewee’s concerns and motivations.
-                Affinity mapping and thematic analysis help organize and
-                identify patterns within the gathered information, aiding in the
-                synthesis of insights crucial for informing the user experience
-                design based on the nuanced understanding.
+                As methodology, we chose in-depth semi-structured interviews
+                with subsequent affinity mapping and thematic analysis. These
+                were chosen for their facilitation of open-ended discussions,
+                providing rich qualitative data on the interviewee’s concerns
+                and motivations. Affinity mapping and thematic analysis help
+                organize and identify patterns within the gathered information,
+                aiding in the synthesis of insights crucial for informing the
+                user experience design based on the nuanced understanding.
               </p>
 
               <p>
@@ -647,11 +666,10 @@ export default function page() {
               <p>
                 Before starting the interviews, we reviewed the research plan
                 with a senior user researcher of travel website eDreams, who
-                provided us with some valuable feedback. Namely, he made clear
-                that we should be very specific about the questions we aimed to
+                provided us with some valuable feedback. He made it clear that
+                we should be very specific about the questions we aimed to
                 answer. We consequently compiled a detailed list of research
-                questions, which you can see with our findings in the next
-                section.
+                questions, which can be seen with the findings below.
               </p>
 
               <h3>
@@ -701,10 +719,9 @@ export default function page() {
                 >
                   here
                 </a>
-                . There you can also see the profiles of the interviewees. To
-                analyze and conceptualize the data, we color-coded themes in the
-                interviews with markers, transferred them to pin it notes and
-                grouped them by affinity.
+                . To analyze and conceptualize the data, we color-coded themes
+                in the interviews with markers, transferred them to pin it notes
+                and grouped them by affinity.
               </p>
               <Image
                 src={Transcripts}
@@ -724,19 +741,23 @@ export default function page() {
               </div>
               <p>Below are our research questions with the findings.</p>
 
-              <h3>Understand Gen Z’s readiness to act sustainably</h3>
+              <h3>Understanding Gen Z’s readiness to act sustainably</h3>
 
               <ol>
                 <li>
-                  <h4>How worried are Generation Z about climate change?</h4>
+                  <h4>How worried is Generation Z about climate change?</h4>
                   <ul>
                     <li>
-                      Many people think about it due to extreme weather events
+                      Extreme weather events are the first thing that comes to
+                      mind for most.
                     </li>
-                    <li>Some people consider the consequences very far way</li>
                     <li>
-                      There is a strong sense of guilt in the worry (’we could
-                      do more’) and a feeling of having to justify
+                      Some consider serious consequences of climate change very
+                      far away.
+                    </li>
+                    <li>
+                      There is a strong sense of guilt (’we could do more’) and
+                      a feeling of having to justify.
                     </li>
                   </ul>
                 </li>
@@ -747,18 +768,19 @@ export default function page() {
                       Every day behavior dominates (recycling, reducing
                       electricity consumption, changing consumption patterns,
                       changing transportation and travel behaviors, eating local
-                      and meat-free)
+                      and meat-free).
                     </li>
                     <li>
-                      Tied to a self-schema (being conscious, eco-friendly)
+                      Behaviours are tied to a self-schema (being conscious,
+                      eco-friendly).
                     </li>
                     <li>
-                      People like small and easy things (ex. carbon offset
-                      charge)
+                      Respondents prefer small and easy things (ex. carbon
+                      offset charge).
                     </li>
                     <li>
                       Only one person mentioned donation and sustainable
-                      investing
+                      investing.
                     </li>
                   </ul>
                 </li>
@@ -768,32 +790,29 @@ export default function page() {
                     into action?
                   </h4>
                   <ul>
-                    <li>Belief that the action brings a personal benefit</li>
+                    <li>A belief that the action brings a personal benefit.</li>
                     <li>
-                      Education and celebrity voices that people can trust
+                      Education and celebrity voices that people can trust.
                     </li>
-                    <li>Norms</li>
+                    <li>Norms.</li>
                     <li>
-                      Ability to see the bigger picture (see the combination of
-                      small actions into big impact)
+                      The ability to see the bigger picture (see the combination
+                      of small actions into big impact)
                     </li>
                   </ul>
                 </li>
                 <li>
                   <h4>
                     What can keep Generation Z from translating
-                    ambitions/concerns into action? (new one)
+                    ambitions/concerns into action?
                   </h4>
                   <ul>
                     <li>
-                      Mistrust of politicians, governments, and big corporations
+                      Mistrust in politicians, governments, and big
+                      corporations.
                     </li>
-                    <li>
-                      Believe that climate change is too big to tackle or even
-                      imagine
-                    </li>
-                    <li>“Fake news” and misinformation</li>
-                    <li>Financial reasons (lack of money)</li>
+                    <li>Believe that climate change is too big to tackle.</li>
+                    <li>Financial reasons (lack of money).</li>
                   </ul>
                 </li>
                 <li>
@@ -801,13 +820,16 @@ export default function page() {
                     How specific are young people’s environmental preferences?
                   </h4>
                   <ul>
-                    <li>Half of the people have no clear preference</li>
                     <li>
-                      Some people have a preference based on their profession
+                      Half of the people had no clear preference of a specific
+                      focus (e.g. renewable energies, waste reduction).
+                    </li>
+                    <li>
+                      Some people have a preference based on their profession.
                     </li>
                     <li>
                       Some people have a preference based on observed real-world
-                      impact
+                      impact.
                     </li>
                   </ul>
                 </li>
@@ -818,22 +840,22 @@ export default function page() {
                   </h4>
                   <ul>
                     <li>
-                      Believe climate change will affect them and they are quite
-                      pessimistic
+                      They believe climate change will affect them and they are
+                      quite pessimistic.
                     </li>
                     <li>
-                      Read a lot about it or deal with sustainability
-                      professionally
+                      They read a lot about it or deal with sustainability
+                      professionally.
                     </li>
-                    <li>Have traveled and seeing the real-world impact</li>
-                    <li>They are mostly not interested in finance</li>
-                    <li>Have doubts about having children</li>
-                    <li>Most of them are female</li>
+                    <li>They have travelled and seen real-world impact.</li>
+                    <li>They are mostly uninterested in finance.</li>
+                    <li>They have doubts about having children</li>
+                    <li>Most of them are female.</li>
                   </ul>
                 </li>
               </ol>
 
-              <h3>Understand the investment behavior of Generation Z</h3>
+              <h3>Understanding the investment behavior of Generation Z</h3>
 
               <ol>
                 <li>
@@ -842,8 +864,8 @@ export default function page() {
                   </h4>
                   <ul>
                     <li>
-                      Most people did invest, through passive investment or
-                      through an advisor
+                      Most people did invest through passive investment or
+                      through an advisor.
                     </li>
                   </ul>
                 </li>
@@ -853,13 +875,17 @@ export default function page() {
                     investment space?
                   </h4>
                   <ul>
-                    <li>Perceived insufficient money to start investing</li>
+                    <li>Perceived insufficient money to start investing.</li>
                     <li>
-                      Insufficient time to learn or keep up to date with finance
+                      Insufficient time to learn or keep up to date with
+                      finance.
                     </li>
-                    <li>Unaware that they could contribute to a bigger Fund</li>
-                    <li>No influence from family education</li>
-                    <li>No interest</li>
+                    <li>
+                      Lack of awareness that they could contribute to a bigger
+                      fund.
+                    </li>
+                    <li>No influence from family education.</li>
+                    <li>No interest.</li>
                   </ul>
                 </li>
                 <li>
@@ -868,14 +894,14 @@ export default function page() {
                     investing?
                   </h4>
                   <ul>
-                    <li>Most people preferred convenience</li>
+                    <li>Most people preferred convenience.</li>
                     <li>
                       People are divided when it comes to automatic AI driven
-                      portfolios, there is a little trust
+                      portfolios, there is a lack of trust.
                     </li>
                     <li>
-                      Control and transparency ultimately important, even with
-                      automatic solutions
+                      Control and transparency are ultimately important, even
+                      with automatic solutions.
                     </li>
                   </ul>
                 </li>
@@ -887,14 +913,14 @@ export default function page() {
                   <ul>
                     <li>
                       Doubt: Some people believe sustainable investing has a
-                      lower success rate
+                      lower success rate.
                     </li>
                     <li>
-                      Doubt: Most people perceive ESG as potential greenwashing
+                      Doubt: Most people perceive ESG as potential greenwashing.
                     </li>
                     <li>
                       Chance: Some people perceive ESG as a good measure but
-                      with room to be improved
+                      with room for improvement.
                     </li>
                     <li>
                       Chance: Some people believe there is potential in
@@ -909,25 +935,31 @@ export default function page() {
                   <ul>
                     <li>
                       Startups are perceived to be more connected with real
-                      impact but also more risky
+                      impact but also more likely to fail.
                     </li>
-                    <li>People want to make sure money goes to real impact</li>
-                    <li>People are split about choosing the location:</li>
+                    <li>
+                      Respondents want to make sure money goes towards real
+                      impact.
+                    </li>
+                    <li>
+                      Respondents are split about choosing the geographic
+                      destination of their investment:
+                    </li>
                     <ul>
                       <li>
-                        Half of the people wouldn’t invest in corrupted
-                        countries or would invest in low-income countries or
-                        specific markets
+                        Half of the respondents wouldn’t invest in corrupted
+                        countries - or would invest in low-income countries and
+                        specific markets.
                       </li>
                       <li>
-                        Half of the people don’t have a preference (’Climate
-                        doesn’t stop at the border’)
+                        Half of the respondents don’t have a preference
+                        (’Climate doesn’t stop at the border’).
                       </li>
                     </ul>
-                    <li>Most of the people are risk-adverse</li>
+                    <li>Most of the respondents are risk-adverse.</li>
                     <li>
-                      Some people would like to understand returns, annual
-                      growth and risk to make a decision
+                      Some respondents would like to understand returns, annual
+                      growth and risk to make a decision.
                     </li>
                   </ul>
                 </li>
@@ -1764,6 +1796,31 @@ export default function page() {
                 portfolio section to allow a better overview. We were happy to
                 find that most parts of the app, including the important impact
                 visualisation, worked very well for our test participants.
+              </p>
+              <p>
+                Looking back on all the phases of this project, we had managed
+                to create a fluent, well-tested and coherent prototype. We had
+                used insights from finance and climate research as well as a
+                participatory workshop to create a novel form of impact
+                visualisation, making use of generative AI tools, 3d modelling
+                and augmented reality. We had used insights from the interviews
+                to stir the initial idea, narrow down the target audience, shape
+                the user experience and adapt the messaging. We had generated a
+                solid pitch and an engaging, beautiful website to introduce our
+                idea.
+              </p>
+              <p>
+                We had missed some opportunities, such as conducting a bigger
+                survey or going deeper into implicit association research about
+                the trustworthiness of specific visual stimuli. But we had also
+                experienced amazing growth. Both of us had improved our
+                abilities in conducting primary research, learned new tools and
+                developed a strong working relationship. Throughout persisting
+                discussions about the complexity of the platform we had learned
+                to step back from emotional infliction and evaluate each others
+                ideas based on first principles. Both of us are confident that,
+                while there is room to improve green finance, we had developed
+                an idea with potential for real impact.
               </p>
             </motion.div>
           ) : null}
