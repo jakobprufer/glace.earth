@@ -65,12 +65,6 @@ export default function page() {
     <div className="blogCont">
       {/* <TitleBar scrollY={scrollY} /> */}
       <div className="blog">
-        {/* <h2>Fehler 404</h2>
-        <p>
-          Temporäres Kubernetes-Cluster update läuft für die Serverstruktur -{" "}
-          <br />
-          Bitte versuchen Sie es erneut in einem Moment.
-        </p> */}
         <h1>Glace - Jakob's Blog</h1>
         <p className="intro">
           This blog documents Final Major Project process of my course mate
@@ -225,14 +219,16 @@ export default function page() {
               </p>
               <p>
                 Using his background in the fund industry, Manfredi highlighted
-                a growing shift towards sustainability in the realm of finance.
+                a growing shift towards sustainability in finance.
+                Sustainability assessment, while still in its infancy, was
+                improving and new providers of reliable data were springing up.
                 Despite the increasing interest among Generation Z in investment
                 opportunities, driven by online brokers and the surge in
                 cryptocurrencies, we noticed a lack of awareness regarding the
                 potential positive impact of investing money. We found ourselves
                 within a generation genuinely committed to making a difference,
                 poised to become the next wave of investors, yet many were
-                unaware of the transformative impact their investment choices
+                unaware of the environmental impact their investment choices
                 could bring.
               </p>
             </motion.div>
@@ -280,14 +276,14 @@ export default function page() {
                 during early project identity development
               </div>
               <p>So we arrived at our research question:</p>
-
-              <p>
-                <b>
-                  How might we employ design to inspire Generation Z to use the
-                  power of money for sustainable impact?
-                </b>
-              </p>
-
+              <div style={{ marginTop: "-32px" }}>
+                <p>
+                  <b>
+                    How might we employ design to inspire Generation Z to use
+                    the power of money for environmental impact?
+                  </b>
+                </p>
+              </div>
               <p>
                 Our expected outcome was a mobile platform that we gave the
                 working title “Gaia”.
@@ -305,18 +301,17 @@ export default function page() {
                 investment platforms primarily presented data through numbers
                 and graphs. Understanding finance was complicated by an
                 abundance of jargon. Our vision was to redirect the focus
-                towards the impact and the notion of care, employing techniques
+                towards the impact and a notion of care, employing techniques
                 such as storytelling, vibrant visualization, and gamification.
                 Our intention was to craft a design that resonated with those
                 unfamiliar with finance, offering a seamless entry point through
-                fixed subscription plans or remarkably low initial investment
-                amounts.
+                fixed subscription plans or low initial investment amounts.
               </p>
 
               <p>
                 We started approaching the topic through literature and online
-                research to gain a more profound understanding of the context we
-                were addressing.
+                research to gain a better understanding of the context we were
+                addressing.
               </p>
               <Image
                 src={Invest}
@@ -340,8 +335,8 @@ export default function page() {
               <p>
                 We wanted to get a sufficient sense of how the financial
                 back-structure of the platform could work. I set out to evaluate
-                a few different investment vehicles we could use, including
-                beyond the traditional stocks, funds and bonds also sustainable
+                a few different investment vehicles we could use, beyond the
+                traditional stocks, funds and bonds also including sustainable
                 start-ups, solar parks, wind farms, agricultural projects and
                 peer-to-peer funding for residential solar energy. Considering
                 company stocks, some of the most innovative companies were truly
@@ -1585,7 +1580,7 @@ export default function page() {
                 className="blogImg"
               />
               <div className="blogCaption">
-                <b>Image:</b> Stolen Sunsets by Mariele Neudecker.
+                <b>Image:</b> Mariele Neudecker, Stolen Sunsets, 1996.
               </div>
               <p>
                 This led us to the idea of employing augmented reality to
@@ -1597,8 +1592,8 @@ export default function page() {
                 textures and place them within very clear, artificial
                 boundaries. After multiple iterations of 3D ice models, we
                 settled on a shining, bumpy surface that could dynamically
-                adjust in size based on the user's specified area of ice. We
-                used Apple's integrated "Quick Look" AR tool that could place 3D
+                adjust in size based on the user's required area of ice. We used
+                Apple's integrated "Quick Look" AR tool that could place 3D
                 models using the iPhone camera, including realistic reflections
                 and shadows.
               </p>
@@ -1612,6 +1607,19 @@ export default function page() {
                 alt="Ice visualisations"
                 className="blogImg"
               /> */}
+              <div className="blogVideoContCont">
+                <div className="blogVideoCont">
+                  <video
+                    className="blogVideo"
+                    controls // add controls attribute to enable player controls
+                  >
+                    <source src="blog/ar.mp4" type="video/mp4"></source>
+                  </video>
+                </div>
+              </div>
+              <div className="blogCaption">
+                <b>Video:</b> Exploring the AR model on campus.
+              </div>
               {/* <div className="blogVideoContCont">
                 <div className="blogVideoCont">
                   <iframe
@@ -1793,20 +1801,20 @@ export default function page() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.2 }}
             >
-              <p>
-                See a final walk through of the app here:{" "}
-                <a
-                  href="https://youtu.be/AoH0gFq7ATo?si=HI2iMHPt-z_PYM2Z"
-                  target="_blank"
-                >
-                  https://youtu.be/AoH0gFq7ATo?si=HI2iMHPt-z_PYM2Z
-                </a>
-              </p>
-              {/* <video
-                src="/walkthrough.mp4"
-                className="blogVideo"
-                controls // add controls attribute to enable player controls
-              ></video> */}
+              <p>See a final walk through of the app here below:</p>
+              <div className="blogVideoContCont">
+                <div className="blogVideoCont">
+                  <video
+                    className="blogVideo"
+                    controls // add controls attribute to enable player controls
+                  >
+                    <source
+                      src="blog/walkthrough.mp4"
+                      type="video/mp4"
+                    ></source>
+                  </video>
+                </div>
+              </div>
               {/* <div className="blogVideoContCont">
                 <div className="blogVideoCont">
                   <iframe
