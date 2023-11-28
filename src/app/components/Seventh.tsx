@@ -8,6 +8,10 @@ import Screen1 from "../../../public/screen1.webp";
 import Screen2 from "../../../public/screen2.webp";
 import Screen3 from "../../../public/screen3.webp";
 import Screen4 from "../../../public/screen4.webp";
+import Screen5 from "../../../public/screen5.webp";
+import Screen6 from "../../../public/screen6.webp";
+// import Screen7 from "../../../public/screen7.webp";
+import Screen8 from "../../../public/screen8.webp";
 
 export default function Seventh() {
   //seventh distance from top
@@ -95,17 +99,27 @@ export default function Seventh() {
                 distanceToTop + 1.3 * viewportHeight <= scrollY &&
                 distanceToTop + 2.1 * viewportHeight >= scrollY
                   ? "exp"
+                  : distanceToTop + 2.9 * viewportHeight <= scrollY
+                  ? "exp"
                   : distanceToTop + 2.1 * viewportHeight <= scrollY
-                  ? "exp2"
+                  ? "exp"
                   : null
               }`}
               key="screen2"
             >
               <Image
                 src={
-                  distanceToTop + 1.3 * viewportHeight >= scrollY
-                    ? Screen2
-                    : Screen4
+                  distanceToTop + 4.5 * viewportHeight <= scrollY
+                    ? Screen8
+                    : distanceToTop + 3.7 * viewportHeight <= scrollY
+                    ? Screen1
+                    : distanceToTop + 2.9 * viewportHeight <= scrollY
+                    ? Screen6
+                    : distanceToTop + 2.1 * viewportHeight <= scrollY
+                    ? Screen5
+                    : distanceToTop + 1.3 * viewportHeight <= scrollY
+                    ? Screen4
+                    : Screen2
                 }
                 alt="Screen showing the Glace App"
                 className="screen"
@@ -194,14 +208,14 @@ export default function Seventh() {
             just your balance, but also your impact grow.
           </motion.p>
         </div>
-        <div className="featureCont medText">
+        <div className="featureCont medText last">
           <motion.p
             initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: easeInOut }}
           >
-            Get a feeling of your impact with an augmented ice sheet of you
-            impact.
+            Place an augmented reality ice sheet in your environment and see how
+            much ice you are saving in the arctic.
           </motion.p>
         </div>
       </div>

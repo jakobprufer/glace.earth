@@ -13,6 +13,9 @@ body
     // min-height: 200vh
     // overflow: hidden
 
+::selection
+    background: $theme
+
 .riIconInline
     transform: translateY(15%) translateX(-15%)
 
@@ -604,3 +607,7 @@ body
         @media (max-width: $breakMobile)
             padding-right: 8vw
             padding-left: 8vw
+
+    &.last
+        min-height: 55vh
+        // background: red
