@@ -1612,7 +1612,7 @@ export default function page() {
                 alt="Ice visualisations"
                 className="blogImg"
               /> */}
-              <div className="blogVideoContCont">
+              {/* <div className="blogVideoContCont">
                 <div className="blogVideoCont">
                   <iframe
                     width="315"
@@ -1625,7 +1625,7 @@ export default function page() {
                     allowfullscreen
                   ></iframe>
                 </div>
-              </div>
+              </div> */}
               {/* <div className="blogCaption">
                 {" "}
                 <b>Video:</b> AR experimentations.
@@ -1772,11 +1772,7 @@ export default function page() {
             onClick={() => setS10Open(!s10Open)}
           >
             <motion.div className="headTitle" layout="position">
-              <h2 className="headHeading">
-                {/* <RiArrowDownSLine className="riIcon" /> */}
-                Final Prototype
-              </h2>
-              {/* <div className="sectionDate"></div> */}
+              <h2 className="headHeading">Final Prototype</h2>
             </motion.div>
             <motion.div
               layout="preserve-aspect"
@@ -1797,13 +1793,21 @@ export default function page() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.2 }}
             >
-              <p>See a final walk through of the app below:</p>
+              <p>
+                See a final walk through of the app here:{" "}
+                <a
+                  href="https://youtu.be/AoH0gFq7ATo?si=HI2iMHPt-z_PYM2Z"
+                  target="_blank"
+                >
+                  https://youtu.be/AoH0gFq7ATo?si=HI2iMHPt-z_PYM2Z
+                </a>
+              </p>
               {/* <video
                 src="/walkthrough.mp4"
                 className="blogVideo"
                 controls // add controls attribute to enable player controls
               ></video> */}
-              <div className="blogVideoContCont">
+              {/* <div className="blogVideoContCont">
                 <div className="blogVideoCont">
                   <iframe
                     className="blogVideo"
@@ -1816,7 +1820,7 @@ export default function page() {
                     allowfullscreen
                   ></iframe>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           ) : null}
         </motion.section>
