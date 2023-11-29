@@ -59,11 +59,17 @@
         font-size: 18pt
         font-weight: 700
 
+        @media (max-width: $breakMobile)
+            font-size: 14pt
+
     h3
         padding-bottom: 16px
         padding-top: 8px
         font-weight: 700
         font-size: 14pt
+
+        @media (max-width: $breakMobile)
+            font-size: 14pt
 
     a
         text-decoration: underline
@@ -82,6 +88,10 @@
         &:hover
             box-shadow: 0 0 20px #00000022
 
+        @media (max-width: $breakMobile)
+            padding: 0 16px
+            margin-bottom: 16px
+
     .sectionHead
         display: flex
         flex-direction: column
@@ -90,6 +100,14 @@
         margin: 0 -32px
         cursor: pointer
 
+        @media (max-width: $breakMobile)
+            padding: 16px 32px 0 32px
+            // background: red
+            gap: 8px
+
+        h2
+            line-height: 100%
+
     .sectionHead.closed
         justify-content: space-between
         flex-direction: row
@@ -97,17 +115,27 @@
         // padding-bottom: -16px
         align-items: center
 
+        @media (max-width: $breakMobile)
+            flex-direction: column
+            padding: 16px 32px 8px 32px
+            align-items: flex-start
+
         .blogImg
             margin-bottom: 0
 
         .headImg
             width: 30%
 
+            @media (max-width: $breakMobile)
+                width: 100%
+
         h2
             flex-shrink: 0
             padding: 0
             margin: 0
-            flex: 2fx
+
+            @media (max-width: $breakMobile)
+                width: 100%
 
     .headTitle
         display: flex

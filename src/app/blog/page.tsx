@@ -1858,7 +1858,7 @@ export default function page() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.2 }}
             >
-              <p>See a final walk through of the app here below:</p>
+              <p>See a final walk through of the app below:</p>
               <div className="blogVideoContCont">
                 <div className="blogVideoCont">
                   <video
