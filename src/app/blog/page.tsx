@@ -49,7 +49,7 @@ import Hifi1 from "../../../public/blog/hifi1.webp";
 import Hifi2 from "../../../public/blog/hifi2.webp";
 // import FinalVideo from "../../../public/blog/walkthrough.mp4";
 
-export default function page() {
+export default function Page() {
   const [s1Open, setS1Open] = useState(false);
   const [s2Open, setS2Open] = useState(false);
   const [s3Open, setS3Open] = useState(false);
@@ -65,7 +65,7 @@ export default function page() {
     <div className="blogCont">
       {/* <TitleBar scrollY={scrollY} /> */}
       <div className="blog">
-        <h1>Glace - Jakob's Blog</h1>
+        <h1>Glace - Jakob&apos;s Blog</h1>
         <p className="intro">
           This blog documents the Final Major Project process of my course mate
           Manfredi and me, as we worked together to design a sustainable
@@ -192,7 +192,7 @@ export default function page() {
                 <li>
                   Reworking online comments from the traditional list view into
                   a new network visualisation, enabling more intuitive
-                  understanding of comments’ connections, similarities and
+                  understanding of comments&apos; connections, similarities and
                   popularity as well as online opinion in general
                 </li>
                 <li>
@@ -210,7 +210,7 @@ export default function page() {
               <h3>What drove our final choice</h3>
               <p>
                 What caught our attention was the heightened concern for climate
-                change and sustainability within our own generation, Genertation
+                change and sustainability within our own generation, Generation
                 Z. In fact it far surpassed that of previous generations. Having
                 worked on climate change-related topics in previous projects, I
                 noticed a saturation of awareness and educational campaigns,
@@ -286,7 +286,7 @@ export default function page() {
               </div>
               <p>
                 Our expected outcome was a mobile platform that we gave the
-                working title “Gaia”.
+                working title &quot;Gaia&quot;.
               </p>
               <Image
                 src={Roadmap}
@@ -541,8 +541,9 @@ export default function page() {
                 products.
               </p>
               <p>
-                As for Gen Z’s relationship to spending, we found four important
-                factors likely to play a role in their consumption behaviors.
+                As for Generation Z&apos;s relationship to spending, we found
+                four important factors likely to play a role in their
+                consumption behaviors.
               </p>
               <ul>
                 <li>
@@ -557,14 +558,14 @@ export default function page() {
                 </li>
                 <li>
                   <b>Desire for security:</b> Economic challenges shape
-                  Generation Z's focus on security, leading to an interest in
-                  saving and conservative spending
+                  Generation Z&apos;s focus on security, leading to an interest
+                  in saving and conservative spending
                 </li>
                 <li>
                   <b>Tendency toward escapism:</b> prone to escapist consumption
                   pursuits including entertainment (e.g., movies, music,
-                  video-games) and fostering social “tribes”, partly as a
-                  response to economic challenges
+                  video-games) and fostering social &quot;tribes&quot;, partly
+                  as a response to economic challenges
                 </li>
               </ul>
               <p>
@@ -631,9 +632,10 @@ export default function page() {
 
               <p>
                 The primary goals of the research were to understand Generation
-                Z's perspectives on climate change, to explore their knowledge,
-                attitudes, and barriers regarding investing and to examine the
-                intersection of environmental and financial interests.
+                Z&apos;s perspectives on climate change, to explore their
+                knowledge, attitudes, and barriers regarding investing and to
+                examine the intersection of environmental and financial
+                interests.
               </p>
 
               <p>
@@ -650,11 +652,12 @@ export default function page() {
                 As methodology, we chose in-depth semi-structured interviews
                 with subsequent affinity mapping and thematic analysis. These
                 were chosen for their facilitation of open-ended discussions,
-                providing rich qualitative data on the interviewee’s concerns
-                and motivations. Affinity mapping and thematic analysis help
-                organize and identify patterns within the gathered information,
-                aiding in the synthesis of insights crucial for informing the
-                user experience design based on the nuanced understanding.
+                providing rich qualitative data on the interviewee&apos;s
+                concerns and motivations. Affinity mapping and thematic analysis
+                help organize and identify patterns within the gathered
+                information, aiding in the synthesis of insights crucial for
+                informing the user experience design based on the nuanced
+                understanding.
               </p>
 
               <p>
@@ -741,7 +744,7 @@ export default function page() {
               </div>
               <p>Below are our research questions with the findings.</p>
 
-              <h3>Understanding Gen Z’s readiness to act sustainably</h3>
+              <h3>Understanding Gen Z&apos;s readiness to act sustainably</h3>
 
               <ol>
                 <li>
@@ -756,8 +759,8 @@ export default function page() {
                       far away.
                     </li>
                     <li>
-                      There is a strong sense of guilt (’we could do more’) and
-                      a feeling of having to justify.
+                      There is a strong sense of guilt (&apos;we could do
+                      more&apos;) and a feeling of having to justify.
                     </li>
                   </ul>
                 </li>
@@ -817,7 +820,8 @@ export default function page() {
                 </li>
                 <li>
                   <h4>
-                    How specific are young people’s environmental preferences?
+                    How specific are young people&apos;s environmental
+                    preferences?
                   </h4>
                   <ul>
                     <li>
@@ -947,13 +951,13 @@ export default function page() {
                     </li>
                     <ul>
                       <li>
-                        Half of the respondents wouldn’t invest in corrupted
-                        countries - or would invest in low-income countries and
-                        specific markets.
+                        Half of the respondents wouldn&apos;t invest in
+                        corrupted countries - or would invest in low-income
+                        countries and specific markets.
                       </li>
                       <li>
-                        Half of the respondents don’t have a preference
-                        (’Climate doesn’t stop at the border’).
+                        Half of the respondents don&apos;t have a preference
+                        (&apos;Climate doesn&apos;t stop at the border&apos;).
                       </li>
                     </ul>
                     <li>Most of the respondents are risk-adverse.</li>
@@ -1161,12 +1165,13 @@ export default function page() {
                 the MSCI ACWI Index (an index of the global economy). We
                 believed that a reduction in comparison to this benchmark was
                 sensible - the ACWI is a good estimate of how the money could be
-                invested by the user’s bank if left in their current account.
-                This CO2 reduction was consistent with a possible 25%-reduction
-                for green funds mentioned on various online sources. I could be
-                bigger if we included not just direct reduction of more
-                sustainable business practices but also the aggregate effect of
-                investing into sustainable development and innovation.
+                invested by the user&apos;s bank if left in their current
+                account. This CO2 reduction was consistent with a possible
+                25%-reduction for green funds mentioned on various online
+                sources. I could be bigger if we included not just direct
+                reduction of more sustainable business practices but also the
+                aggregate effect of investing into sustainable development and
+                innovation.
               </p>
 
               <p>
@@ -1216,11 +1221,12 @@ export default function page() {
                 <b>Charts:</b> Workshop demographics.
               </div>
               <p>
-                Secondly, we conducted a drawing workshop to collect people’s
-                associations with CO2 Emissions. This was intended to help us
-                generate ideas for the visualization. We asked 12 participants
-                from 12 countries, half of them from Asia, the other half from
-                Europe, to draw their initial associations for the questions:
+                Secondly, we conducted a drawing workshop to collect
+                people&apos;s associations with CO2 Emissions. This was intended
+                to help us generate ideas for the visualization. We asked 12
+                participants from 12 countries, half of them from Asia, the
+                other half from Europe, to draw their initial associations for
+                the questions:
               </p>
 
               <ul>
@@ -1308,7 +1314,7 @@ export default function page() {
                   <strong>USER 2</strong> ($5000 start, 0$/month)
                 </li>
                 <ul>
-                  <li>0.75 m2 of ice (size of a 52’’ TV Screen)</li>
+                  <li>0.75 m2 of ice (size of a 52&apos;&apos; TV Screen)</li>
                 </ul>
               </ul>
 
@@ -1316,7 +1322,7 @@ export default function page() {
               <p>
                 A simple calculator is sometimes the most powerful tool. I was
                 very happy that we had managed to get a clearer picture of our
-                project's underlying data as soon as we just started digging and
+                project&apos;s underlying data as soon as we just started digging and
                 calculating. While there remained some uncertainty about the
                 data estimates, we finally managed to get on grounds sufficient
                 to further develop our design.
@@ -1364,12 +1370,13 @@ export default function page() {
               <p>
                 We now felt we had a strong idea in visualizing CO2 impact in
                 the area of arctic ice saved. To the best of our knowledge, this
-                approach was novel in this visual form. When explaining that "a
-                round-trip flight from London to LA could potentially result in
-                the loss of up to 3 square meters of Arctic ice per passenger,"
-                the responses we got indicated that the ice served as a tangible
-                and emotionally resonant measure. It would also enable us to put
-                the investment in perspective compared to other behaviors.
+                approach was novel in this visual form. When explaining that
+                &quot;a round-trip flight from London to LA could potentially
+                result in the loss of up to 3 square meters of Arctic ice per
+                passenger,&quot; the responses we got indicated that the ice
+                served as a tangible and emotionally resonant measure. It would
+                also enable us to put the investment in perspective compared to
+                other behaviors.
               </p>
 
               <h3>Low Fidelity Prototype and Testing</h3>
@@ -1395,7 +1402,7 @@ export default function page() {
               <p>
                 One notable challenge we anticipated was making the first
                 screen, emphasizing impact visualization, engaging enough to
-                capture users' attention. We were mindful of potential user
+                capture users&apos; attention. We were mindful of potential user
                 guilt if they consistently bypassed the impact screen to access
                 their financial performance data.
               </p>
@@ -1403,7 +1410,7 @@ export default function page() {
               <p>
                 We then started working on low fidelity prototypes in Figma. For
                 the portfolio screen, our concept involved a wheel illustrating
-                the portfolio's composition, with percentages of each fund
+                the portfolio&apos;s composition, with percentages of each fund
                 represented. We found the idea appealing because it allowed
                 users to:
               </p>
@@ -1415,9 +1422,9 @@ export default function page() {
                 </li>
                 <li>
                   Rotate the wheel or pie chart to select a specific fund for
-                  detailed information, accompanied by the phone's electronic
-                  haptic feedback for a tactile experience, reminiscent of the
-                  rattling of a wheel of fortune.
+                  detailed information, accompanied by the phone&apos;s
+                  electronic haptic feedback for a tactile experience,
+                  reminiscent of the rattling of a wheel of fortune.
                 </li>
               </ul>
 
@@ -1489,18 +1496,18 @@ export default function page() {
               <p>
                 With the ice at the centre of our project vision, we set out to
                 develop a modern and coherent brand for the platform, deciding
-                on "Glace" to evoke arctic glaciers and the French word for ice.
-                Leveraging our initial vibrant colour palette targeting young
-                audiences, we expanded the visual identity with an app icon and
-                style guide. After iterating through various icon versions, we
-                settled on a simplified representation of a fan, literally used
-                to cool an environment down. This fan would also be used for
-                compelling loading animations, for instance as a spinner upon
-                opening the app. Using AI art generator Midjourney, we created
-                ominous, glowing blue ice shapes on dark backgrounds. A top-down
-                image of ice bears helped us convey emotion along the rather
-                technical portrayal of surface areas. These visuals further
-                guided the project identity.
+                on &quot;Glace&quot; to evoke arctic glaciers and the French
+                word for ice. Leveraging our initial vibrant colour palette
+                targeting young audiences, we expanded the visual identity with
+                an app icon and style guide. After iterating through various
+                icon versions, we settled on a simplified representation of a
+                fan, literally used to cool an environment down. This fan would
+                also be used for compelling loading animations, for instance as
+                a spinner upon opening the app. Using AI art generator
+                Midjourney, we created ominous, glowing blue ice shapes on dark
+                backgrounds. A top-down image of ice bears helped us convey
+                emotion along the rather technical portrayal of surface areas.
+                These visuals further guided the project identity.
               </p>
               <Image
                 src={Colours}
@@ -1530,7 +1537,7 @@ export default function page() {
               </div>
               <p>
                 The majority of website imagery comes from Midjourney outputs;
-                We also expanded some creative commons images with Adobe's
+                We also expanded some creative commons images with Adobe&apos;s
                 Generative tools. Mocking up the site design in Figma, we
                 emulated product pages such as those of Apple with lively,
                 flowing assets. I then built the site using Next.js, TypeScript,
@@ -1624,10 +1631,10 @@ export default function page() {
                 textures and place them within very clear, artificial
                 boundaries. After multiple iterations of 3D ice models, we
                 settled on a shining, bumpy surface that could dynamically
-                adjust in size based on the user's required area of ice. We used
-                Apple's integrated "Quick Look" AR tool that could place 3D
-                models using the iPhone camera, including realistic reflections
-                and shadows.
+                adjust in size based on the user&apos;s required area of ice. We
+                used Apple&apos;s integrated &quot;Quick Look&quot; AR tool that
+                could place 3D models using the iPhone camera, including
+                realistic reflections and shadows.
               </p>
               {/* <Image
                 src={Oldice}
@@ -1705,11 +1712,11 @@ export default function page() {
                 Addressing the latter point was crucial, as feedback from
                 professors and course mates emphasized the significance of
                 highlighting communal impact. In climate change, a fundamental
-                challenge is driving home the reality that while an individual's
-                personal impact may seem negligible, aggregated across
-                populations, small changes in behaviors make an immense
-                difference. We explored various visual styles, including
-                comparisons to the size of a ship. Again, we had some
+                challenge is driving home the reality that while an
+                individual&apos;s personal impact may seem negligible,
+                aggregated across populations, small changes in behaviors make
+                an immense difference. We explored various visual styles,
+                including comparisons to the size of a ship. Again, we had some
                 discussions about the complexity of these visualizations,
                 debating how many different options we should afford the user in
                 experimenting with the visualization. Should they be able to
@@ -1718,9 +1725,9 @@ export default function page() {
                 other behaviors such as flights or planting of a tree?
                 Ultimately, we opted for a straightforward approach: displaying
                 an overhead view of an ice sheet with polar bears as size
-                references. Pink rectangles represent the user's impact, and a
-                community view allows users to see their impact in the context
-                of other Glace users in the local area.
+                references. Pink rectangles represent the user&apos;s impact,
+                and a community view allows users to see their impact in the
+                context of other Glace users in the local area.
               </p>
             </motion.div>
           ) : null}
